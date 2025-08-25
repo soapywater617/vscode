@@ -138,7 +138,7 @@ st.markdown(
 )
 
 
-# Navigation bar with links that set the ?page= parameter
+# Navigation bar with links that set the ?page= parameter (no new tab)
 st.markdown(
     '''<div class="nav">
     <a href="/?page=Landing%20Page">Home</a>
@@ -273,7 +273,7 @@ elif page == "Shop":
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     st.write("")
     # Featured Product section
-    st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px; color: #7F6252; font-weight: bold; margin-top: 2em;">Featured Product:</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px, color: #7F6252; font-weight: bold; margin-top: 2em;">Featured Product:</div>', unsafe_allow_html=True)
     col5, col6 = st.columns([2, 1])
     with col5:
         st.image("assets/bearbuns.png", use_container_width=True)
