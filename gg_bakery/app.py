@@ -181,7 +181,7 @@ if page == "Landing Page":
     st.write("")
     col1, col2, col3 = st.columns(3)
     # Logo
-    logo_path = "bearbuns.png"
+    logo_path = "gg_bakery/bearbuns.png"
     if os.path.exists(logo_path):
         with col2:
             st.image(logo_path, use_container_width=False, width=220)
