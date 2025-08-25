@@ -1,2 +1,2 @@
 import streamlit as st
-st.image("assets/bearbagels2.png")
+st.image("gg_bakery/assets/bearbagels2.png")
