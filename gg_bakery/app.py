@@ -186,7 +186,7 @@ if page == "Landing Page":
         with col2:
             st.image(logo_path, use_container_width=False, width=220)
     else:
-        st.image("assets/tira1.png", use_container_width=False, width=220)
+        st.image("assets/tira.png", use_container_width=False, width=220)
     st.write("")
 
     # Recent Desserts
