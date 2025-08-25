@@ -399,7 +399,7 @@ elif page == "About Us":
     # First member: left-aligned
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image(gg_bakery/assets/giapic.png", width=220)
+        st.image("gg_bakery/assets/giapic.png", width=220)
     with col2:
         st.markdown('<div class="ltbrwnbody">Gia something something lorem ipsum blah blah<br>Favorite sweet treat: Oreo McFlurry :P</div>', unsafe_allow_html=True)
     # Second member: right-aligned
