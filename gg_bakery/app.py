@@ -193,15 +193,15 @@ if page == "Landing Page":
     st.markdown('<div class="section-title">Recent Desserts</div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("assets/tira1.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #tira
         st.markdown('<div class="dessert-title">Tiramisu</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Egg-less Tiramisu with smooth, cream cheese whipped cream.</div>', unsafe_allow_html=True)
     with col2:
-        st.image("assets/matcha_puff.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #matchapuff
         st.markdown('<div class="dessert-title">Cream Puffs</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">description description description many flavors</div>', unsafe_allow_html=True)
     with col3:
-        st.image("assets/pink_cupcake.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #strawcupcakes
         st.markdown('<div class="dessert-title">Cupcakes</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Vanilla and strawberry icing on red velvet and vanilla-bean infused cupcakes</div>', unsafe_allow_html=True)
 
@@ -211,8 +211,12 @@ if page == "Landing Page":
     with col4:
         st.write('<div class="blackbody">G&G Bakery’s mission is blah blah bring a smile to every bake proper name place name story time stuff</div>', unsafe_allow_html=True)
     with col5:
-        st.image("assets/gglogo.png", use_container_width=True)
-    
+        if (os.path.exists("assets/gglogo.png"){
+            st.image("assets/gglogo.png", use_container_width=True)
+        }
+        else{
+            st.image("https://placehold.co/160x160?text=gglogo", use_container_width=True) #gglogo
+        }
     # Our Reviews
     st.markdown('<div class="section-title">Our Reviews</div>', unsafe_allow_html=True)
     col6, col7, col8 = st.columns(3)
@@ -262,10 +266,10 @@ elif page == "Shop":
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;">Pricing</button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
-        st.image("assets/plainbagels.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #plainbagels
     col3, col4 = st.columns([2, 3])
     with col3:
-        st.image("assets/straw_cake.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=straw_cake", use_container_width=True) 
     with col4:
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Custom Cakes</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">A subheading for this section, as long or as short as you like</div>', unsafe_allow_html=True)
@@ -276,14 +280,14 @@ elif page == "Shop":
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px, color: #7F6252; font-weight: bold; margin-top: 2em;">Featured Product:</div>', unsafe_allow_html=True)
     col5, col6 = st.columns([2, 1])
     with col5:
-        st.image("assets/bearbuns.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=bearbuns", use_container_width=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Bear Buns!</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Sweet milk buns, shaped into cute bears :) (4in diameter)<br>Price of One: $6-7</div>', unsafe_allow_html=True)
     with col6:
         st.image("https://placehold.co/200x120?text=Photo", use_container_width=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Shokupan?</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Description of lower product<br>$10.99</div>', unsafe_allow_html=True)
-        st.image("assets/bearbagels2.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=bearbagels2", use_container_width=True) #bearbagels!
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Bear Bagels ;)</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Description of lower product<br>$10.99</div>', unsafe_allow_html=True)
     st.write("")
@@ -330,7 +334,7 @@ elif page == "Delivery & Pickup":
     # Pickup Locations section
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 72px; color: #a82020; font-weight: bold; margin-top: 1em;">Delivery Locations:</div>', unsafe_allow_html=True)
     st.markdown('<div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 1em;">The star markers mark locations where we deliver to, including: UW, Interlake HS, Bellevue HS, Tyee MS, and Newport HS.</div>', unsafe_allow_html=True)
-    st.image("assets/map.png", use_container_width=True)
+    st.image("https://placehold.co/160x160?text=MAP", use_container_width=True) #map T-T
     st.markdown('<a href=""><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get google maps links to delivery meet up locations</div></a>'
     '<br>For delivery, you will meet someone blah blah at the designated location blah blah as discussed with said blah blah'
     'at blah blah time.</div>', unsafe_allow_html=True)
@@ -338,9 +342,9 @@ elif page == "Delivery & Pickup":
     st.markdown('<div class="section-title" style="font-size: 40px; color: #a82020; margin-top: 2em;">Pickup (or other) Options:</div>', unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("assets/cafe_sitting.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=cafe_sitting", use_container_width=False, container_width=220) #cafe_sitting.png
     with col2:
-        st.image("assets/gglogo.png", use_container_width=True)
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #gglogo? or other pic
     st.markdown('<div class="ltbrwnbody" style="color: #a82020">General pickups will be throughout the school day @ Newport HS<br>' \
     'Special deliveries can be made to your house. For more info,</div>', unsafe_allow_html=True)
     render_footer()
@@ -349,8 +353,8 @@ elif page == "Events & Sales":
     # Main event section
     col1, col2 = st.columns([2, 3])
     with col1:
-        st.image("assets/bearbagels2.png", use_container_width=True)
-    with col2:
+        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #bearbagels2?
+   with col2:
         st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 0em; font-size: 40px;">Special Bread Shop Event?</div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #222; font-weight: bold;">$$$</div>', unsafe_allow_html=True)
@@ -395,19 +399,19 @@ elif page == "About Us":
     # First member: left-aligned
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("assets/giapic.png", width=220)
+        st.image("https://placehold.co/160x160?text=giapic", width=220)
     with col2:
         st.markdown('<div class="ltbrwnbody">Gia something something lorem ipsum blah blah<br>Favorite sweet treat: Oreo McFlurry :P</div>', unsafe_allow_html=True)
     # Second member: right-aligned
     col3, col4 = st.columns([2, 1])
     with col4:
-        st.image("assets/gracepic.png", width=220)    
+        st.image("https://placehold.co/160x160?text=gracepic", width=220)    
     with col3:
         st.markdown('<div class="ltbrwnbody" style="text-align: right;">Grace something something lorem ipsum blah blah blah blah blah<br>Favorite sweet treat: Chocolate Chip Cookies</div>', unsafe_allow_html=True)
     # Third member: left-aligned
     col5, col6 = st.columns([1, 2])
     with col5:
-        st.image("assets/mepic2.png", width=220)
+        st.image("https://placehold.co/160x160?text=sophiepic", width=220)
     with col6:
         st.markdown('<div class="ltbrwnbody">Sophie something something lorem ipsum blah blah<br>Favorite sweet treat: Crumbl Cannoli Cookie</div>', unsafe_allow_html=True)
     render_footer()
