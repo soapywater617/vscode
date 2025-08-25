@@ -193,7 +193,7 @@ if page == "Landing Page":
     st.markdown('<div class="section-title">Recent Desserts</div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("https://placehold.co/160x160?text=img", use_container_width=True) #tira
+        st.image("gg_bakery/assets/tira.png", use_container_width=True) #tira
         st.markdown('<div class="dessert-title">Tiramisu</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Egg-less Tiramisu with smooth, cream cheese whipped cream.</div>', unsafe_allow_html=True)
     with col2:
