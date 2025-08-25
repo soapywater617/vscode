@@ -342,7 +342,7 @@ elif page == "Delivery & Pickup":
     st.markdown('<div class="section-title" style="font-size: 40px; color: #a82020; margin-top: 2em;">Pickup (or other) Options:</div>', unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("gg_bakery/assets/cafe_sitting.png", use_container_width=False, width=220) #cafe_sitting.png
+        st.image("gg_bakery/assets/cafe_sitting.png", use_container_width=True) #cafe_sitting.png
     with col2:
         st.image("gg_bakery/assets/gglogo.png", use_container_width=True) #gglogo? or other pic
     st.markdown('<div class="ltbrwnbody" style="color: #a82020">General pickups will be throughout the school day @ Newport HS<br>' \
