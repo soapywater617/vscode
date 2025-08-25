@@ -211,10 +211,10 @@ if page == "Landing Page":
     with col4:
         st.write('<div class="blackbody">G&G Bakery’s mission is blah blah bring a smile to every bake proper name place name story time stuff</div>', unsafe_allow_html=True)
     with col5:
-        if (os.path.exists("assets/gglogo.png"))
+        if (os.path.exists("assets/gglogo.png")):
             st.image("assets/gglogo.png", use_container_width=True)
         
-        else
+        else:
             st.image("https://placehold.co/160x160?text=gglogo", use_container_width=True) #gglogo
         
     # Our Reviews
