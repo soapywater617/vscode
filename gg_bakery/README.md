@@ -25,7 +25,7 @@ This is a Streamlit-based website for G&G Bakery, designed to provide informatio
 
 ## Running the App
 Start the Streamlit app with the following command:
-```bash
+```
 streamlit run app.py
 ```
 
@@ -34,11 +34,3 @@ streamlit run app.py
 - `assets/`: Stores icons, images, and other static assets.
 - `data/`: Contains JSON files for data storage.
 
-## Seed Data
-Sample data is provided in the `data/` folder for demonstration purposes.
-
-## Acceptance Criteria
-- Pixel-approximate to Figma design.
-- All primary flows work end-to-end.
-- Basic accessibility features implemented.
-- No console errors; app starts with a single command.
