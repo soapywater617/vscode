@@ -354,7 +354,7 @@ elif page == "Events & Sales":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.image("https://placehold.co/160x160?text=img", use_container_width=True) #bearbagels2?
-   with col2:
+    with col2:
         st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 0em; font-size: 40px;">Special Bread Shop Event?</div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #222; font-weight: bold;">$$$</div>', unsafe_allow_html=True)
