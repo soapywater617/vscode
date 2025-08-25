@@ -186,7 +186,7 @@ if page == "Landing Page":
         with col2:
             st.image(logo_path, use_container_width=False, width=220)
     else:
-        st.image("assets/randompng.png", use_container_width=False, width=220)
+        st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=220)
     st.write("")
 
     # Recent Desserts
