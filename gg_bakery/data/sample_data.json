@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate Cake",
+        "price": 20.0,
+        "description": "Rich and moist chocolate cake topped with ganache.",
+        "image": "assets/chocolate_cake.png"
+    },
+    {
+        "id": 2,
+        "name": "Blueberry Muffin",
+        "price": 3.5,
+        "description": "Soft muffin filled with fresh blueberries.",
+        "image": "assets/blueberry_muffin.png"
+    }
+]
