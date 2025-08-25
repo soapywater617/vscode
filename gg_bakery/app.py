@@ -181,12 +181,12 @@ if page == "Landing Page":
     st.write("")
     col1, col2, col3 = st.columns(3)
     # Logo
-    logo_path = "gg_bakery/bearbuns.png"
+    logo_path = "gg_bakery/assets/landing_image.png"
     if os.path.exists(logo_path):
         with col2:
             st.image(logo_path, use_container_width=False, width=220)
     else:
-        st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=220)
+        st.image("https://github.com/soapywater617/vscode/blob/b081cdd8a3218cbae5ac2838ca07b1a220201e05/gg_bakery/assets/landing_image.png", use_container_width=False, width=220)
     st.write("")
 
     # Recent Desserts
