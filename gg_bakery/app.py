@@ -138,7 +138,7 @@ st.markdown(
 )
 
 
-# Navigation bar with links that set the ?page= parameter (no new tab)
+# Navigation bar with links that set the ?page= parameter does open a new tab...
 st.markdown(
     '''<div class="nav">
     <a href="/?page=Landing%20Page">Home</a>
@@ -175,7 +175,7 @@ page = selected
 
 if page == "Landing Page":
     st.markdown('<div class="custom-title">G&G Bakery</div>', unsafe_allow_html=True)
-    st.markdown('<div class="subheading">Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="subheading">Welcome valued customer!! Explore our past events, learn more about our team, or find the answer to your cravings in our shop! <br>Have fun ^-^</div>', unsafe_allow_html=True)
     st.markdown('<a href="https://docs.google.com/forms/d/e/1FAIpQLSeN1ZFrdGuOProo8FecOigSmd70JB5NKeAt2uLTJOBRrqR-nQ/viewform"><button class="custom-btn">' \
     'Place a Custom Order</button></a>', unsafe_allow_html=True)
     st.write("")
@@ -222,13 +222,13 @@ if page == "Landing Page":
     col6, col7, col8 = st.columns(3)
     with col6:
         st.markdown('<div class="ltbrwn-title">“A terrific piece of praise”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Name<br>Description</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Billy<br>Bob's brother</div>', unsafe_allow_html=True)
     with col7:
         st.markdown('<div class="ltbrwn-title">“A fantastic bit of feedback”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Name<br>Description</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Joel<br>Description</div>', unsafe_allow_html=True)
     with col8:
         st.markdown('<div class="ltbrwn-title">“A genuinely glowing review”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Name<br>Description</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Winnie the pooh<br>Bought tiramisu 5x</div>', unsafe_allow_html=True)
     # Footer
     render_footer()
 
@@ -262,7 +262,7 @@ elif page == "Shop":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Bread Bags?</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">A subheading for this section, as long or as short as you like</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Bread bags with </div>', unsafe_allow_html=True)
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;">Pricing</button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
@@ -272,7 +272,7 @@ elif page == "Shop":
         st.image("gg_bakery/assets/straw_cake.png", use_container_width=True) 
     with col4:
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Custom Cakes</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">A subheading for this section, as long or as short as you like</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Custom cake flavor and design to your liking!</div>', unsafe_allow_html=True)
         st.markdown('<button style="background:  #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;">Pricing</button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     st.write("")
@@ -286,18 +286,18 @@ elif page == "Shop":
     with col6:
         st.image("https://placehold.co/200x120?text=Photo", use_container_width=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Shokupan?</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Description of lower product<br>$10.99</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Japanese Milk Bread<br>$10.99</div>', unsafe_allow_html=True)
         st.image("gg_bakery/assets/bearbagels2.png", use_container_width=True) #bearbagels!
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Bear Bagels ;)</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Description of lower product<br>$10.99</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Bagels of your choice with bear faces c._.o<br>$10.99</div>', unsafe_allow_html=True)
     st.write("")
     # Section heading with 4 subheadings
-    st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px; color: #7F6252; font-weight: bold; margin-top: 2em;">Section heading</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px; color: #7F6252; font-weight: bold; margin-top: 2em;">Look Forward To:</div>', unsafe_allow_html=True)
     col7, col8, col9, col10 = st.columns(4)
     for col in [col7, col8, col9, col10]:
         with col:
-            st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Subheading</div>', unsafe_allow_html=True)
-            st.caption('<div class="greybody">Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</div>', unsafe_allow_html=True)
+            st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Future Product</div>', unsafe_allow_html=True)
+            st.caption('<div class="greybody">Something something description maybe + estimated date</div>', unsafe_allow_html=True)
     # Footer
     render_footer()
 
@@ -312,7 +312,7 @@ elif page == "G&G In Numbers":
         st.markdown('<div class="blackbody">From volunteer bakers, story-reposters, delivery drivers, event-enterers, '
         'and our beloved customers, heheheheheheh but real number of members involved idk</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Funds Raised: ## </div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Through all of our events, we've collected ## for blank blank.</div>', unsafe_allow_html=True)
     with col2:
         #st.markdown('<div class="section-title" style="font-size: 64px;">20</div>', unsafe_allow_html=True)
         # logo_path = "assets/gglogo.png"
@@ -382,6 +382,12 @@ elif page == "Events & Sales":
         "gg_bakery/assets/tirastack.png",
         "gg_bakery/assets/hcb_ricekrispies.png"
     ]
+    texts = [
+    "Welcome to the site! 🎉",
+    "Our mission is to help skaters improve ⛸️",
+    "Check out our latest updates 🚀",
+    "Contact us for more info 📩"
+    ]
     for i in range(0, 6, 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
@@ -389,6 +395,8 @@ elif page == "Events & Sales":
                 img = resize_image(past_event_imgs[i+j], target_size=(220,220))
                 if img is not None:
                     st.image(img, use_container_width=True)
+                for t in texts:
+                st.markdown(f"- {t}")
                 st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
