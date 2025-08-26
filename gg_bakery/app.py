@@ -362,7 +362,7 @@ elif page == "Events & Sales":
         st.markdown('<div class="greybody">Additional maybe nutrition details</div>', unsafe_allow_html=True)
     st.write("")
     # Past Events section
-    st.markdown('<div class="section-title">Past Events</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title" style="margin-top: 2em;">Past Events</div>', unsafe_allow_html=True)
     #resizing images to have same height and width with PIL helper
     def resize_image(path, target_size=(220,220)):
         from PIL import Image
