@@ -397,7 +397,8 @@ elif page == "Events & Sales":
                 img = resize_image(past_event_imgs[i+j], target_size=(220,220))
                 if img is not None:
                     st.image(img, use_container_width=True)
-                st.markdown(f"texts[i]")
+                
+                st.markdown(texts[i])
                 st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
