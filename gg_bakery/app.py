@@ -222,7 +222,7 @@ if page == "Landing Page":
     col6, col7, col8 = st.columns(3)
     with col6:
         st.markdown('<div class="ltbrwn-title">“A terrific piece of praise”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Billy<br>Bob's brother</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Billy<br>Bob\'s brother</div>', unsafe_allow_html=True)
     with col7:
         st.markdown('<div class="ltbrwn-title">“A fantastic bit of feedback”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Joel<br>Description</div>', unsafe_allow_html=True)
