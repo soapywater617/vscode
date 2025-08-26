@@ -312,7 +312,7 @@ elif page == "G&G In Numbers":
         st.markdown('<div class="blackbody">From volunteer bakers, story-reposters, delivery drivers, event-enterers, '
         'and our beloved customers, heheheheheheh but real number of members involved idk</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Funds Raised: ## </div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Through all of our events, we've collected ## for blank blank.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Through all of our events, we\'ve collected ## for blank blank.</div>', unsafe_allow_html=True)
     with col2:
         #st.markdown('<div class="section-title" style="font-size: 64px;">20</div>', unsafe_allow_html=True)
         # logo_path = "assets/gglogo.png"
@@ -335,7 +335,7 @@ elif page == "Delivery & Pickup":
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 72px; color: #a82020; font-weight: bold; margin-top: 1em;">Delivery Locations:</div>', unsafe_allow_html=True)
     st.markdown('<div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 1em;">The star markers mark locations where we deliver to, including: UW, Interlake HS, Bellevue HS, Tyee MS, and Newport HS.</div>', unsafe_allow_html=True)
     st.image("gg_bakery/assets/map.png", use_container_width=True) #map T-T
-    st.markdown('<a href=""><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get google maps links to delivery meet up locations</div></a>'
+    st.markdown('<a href=""><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get Google Maps links to delivery meet-up locations</div></a>'
     '<br>For delivery, you will meet someone blah blah at the designated location blah blah as discussed with said blah blah'
     'at blah blah time.</div>', unsafe_allow_html=True)
     # Delivery Options section
@@ -383,10 +383,12 @@ elif page == "Events & Sales":
         "gg_bakery/assets/hcb_ricekrispies.png"
     ]
     texts = [
-    "Welcome to the site! 🎉",
-    "Our mission is to help skaters improve ⛸️",
-    "Check out our latest updates 🚀",
-    "Contact us for more info 📩"
+    "Our First Custom Cookie Order 🍪",
+    "Cream Puffs!",
+    "Holiday Cookie Boxes,
+    "Extra Combo Boxes",
+    "Our favorite, Tiramisu!!",
+    "Cupcakes...?"
     ]
     for i in range(0, 6, 3):
         cols = st.columns(3)
@@ -395,8 +397,7 @@ elif page == "Events & Sales":
                 img = resize_image(past_event_imgs[i+j], target_size=(220,220))
                 if img is not None:
                     st.image(img, use_container_width=True)
-                for t in texts:
-                st.markdown(f"- {t}")
+                st.markdown(f"texts[i]")
                 st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
