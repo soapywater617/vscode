@@ -385,7 +385,7 @@ elif page == "Events & Sales":
     texts = [
     "Our First Custom Cookie Order 🍪",
     "Cream Puffs!",
-    "Holiday Cookie Boxes,
+    "Holiday Cookie Boxes",
     "Extra Combo Boxes",
     "Our favorite, Tiramisu!!",
     "Cupcakes...?"
