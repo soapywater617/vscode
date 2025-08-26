@@ -383,7 +383,7 @@ elif page == "Events & Sales":
         "gg_bakery/assets/hcb_ricekrispies.png"
     ]
     texts = [
-    "Our First Custom Cookie Order 🍪",
+    "Our 1st Custom Cookie Order 🍪",
     "Cream Puffs!",
     "Holiday Cookie Boxes",
     "Extra Combo Boxes",
@@ -398,7 +398,7 @@ elif page == "Events & Sales":
                 if img is not None:
                     st.image(img, use_container_width=True)
                 
-                st.markdown(texts[i])
+                st.markdown('<div class="greybody>'texts[i+j]'</div>')
                 st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
                 st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
