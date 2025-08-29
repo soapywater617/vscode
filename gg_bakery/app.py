@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components #for dynamic calendar/
 import os
 from urllib.parse import unquote
 from PIL import Image, ImageOps, ImageDraw
@@ -141,13 +142,13 @@ st.markdown(
 # Navigation bar with links that set the ?page= parameter does open a new tab...
 st.markdown(
     '''<div class="nav">
-    <a href="/?page=Landing%20Page">Home</a>
-    <a href="/?page=G%26G%20In%20Numbers">G&G In Numbers</a>
-    <a href="/?page=Delivery%20%26%20Pickup">Delivery & Pickup</a>
-    <a href="/?page=Events%20%26%20Sales">Events & Sales</a>
-    <a href="/?page=About%20Us">About Us</a>
-    <a href="#footer-contact">Contact Us</a>
-    <a href="/?page=Shop"><button class="shop-btn">Shop</button></a>
+    <a href="/?page=Landing%20Page" target="_self">Home</a>
+    <a href="/?page=G%26G%20In%20Numbers" target="_self">G&G In Numbers</a>
+    <a href="/?page=Delivery%20%26%20Pickup" target="_self">Delivery & Pickup</a>
+    <a href="/?page=Events%20%26%20Sales" target="_self">Events & Sales</a>
+    <a href="/?page=About%20Us" target="_self">About Us</a>
+    <a href="#footer-contact" target="_self">Contact Us</a>
+    <a href="/?page=Shop" target="_self"><button class="shop-btn">Shop</button></a>
     </div>''',
     unsafe_allow_html=True
 )
@@ -160,7 +161,7 @@ all_pages = [
     "Delivery & Pickup",
     "Events & Sales",
     "About Us",
-    "Contact Us"
+    #"Contact Us"
 ]
 
 # Get and set page from query params using st.query_params
@@ -204,6 +205,170 @@ if page == "Landing Page":
         st.image("assets/pink_cupcake.png", use_container_width=True) #strawcupcakes
         st.markdown('<div class="dessert-title">Cupcakes</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Vanilla and strawberry icing on red velvet and vanilla-bean infused cupcakes</div>', unsafe_allow_html=True)
+
+    #Our Calendary
+    st.markdown('<div class="section-title">Calendar</div>', unsafe_allow_html=True)
+    calendar_html = """
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                    <style>
+                    * {box-sizing: border-box;}
+                    ul {list-style-type: none;}
+                    body {font-family: Verdana, sans-serif;}
+
+                    .month {
+                    padding: 70px 25px;
+                    width: 100%;
+                    background: #ba9e8d;
+                    text-align: center;
+                    }
+
+                    .month ul {
+                    margin: 0;
+                    padding: 0;
+                    }
+
+                    .month ul li {
+                    color: white;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    }
+
+                    .month .prev {
+                    float: left;
+                    padding-top: 10px;
+                    }
+
+                    .month .next {
+                    float: right;
+                    padding-top: 10px;
+                    }
+
+                    .weekdays {
+                    margin: 0;
+                    padding: 10px 0;
+                    background-color: #ddd;
+                    }
+
+                    .weekdays li {
+                    display: inline-block;
+                    width: 13.6%;
+                    color: #666;
+                    text-align: center;
+                    }
+
+                    .days {
+                    padding: 10px 0;
+                    background: #eee;
+                    margin: 0;
+                    }
+
+                    .days li {
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 100px;
+                    height: 75px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    margin-bottom: 5px;
+                    font-size:12px;
+                    color: black;
+                    }
+
+                    .days li .active {
+                    padding: 5px;
+                    background: #ba9e8d;
+                    color: white !important
+                    }
+
+                    /* Add media queries for smaller screens */
+                    @media screen and (max-width:720px) {
+                    .weekdays li, .days li {width: 13.1%;}
+                    }
+
+                    @media screen and (max-width: 420px) {
+                    .weekdays li, .days li {width: 12.5%;}
+                    .days li .active {padding: 2px;}
+                    }
+
+                    @media screen and (max-width: 290px) {
+                    .weekdays li, .days li {width: 12.2%;}
+                    }
+                    
+                    </style>
+                        <style>
+                        .main .block-container {
+                        max-width: 100% !important;
+                        padding-left: 0rem;
+                        padding-right: 0rem;
+                        }   
+                    </style>
+                    </head>
+                    <body>
+                    <div style="width:100%; display:block;">
+                    <div class="month">      
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>
+                        August<br>
+                        <span style="font-size:18px">2021</span>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                    </ul>
+
+                    <ul class="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span class="active">10</span></li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    </ul>
+
+                    </div>
+                    </body>
+                    </html>
+                    
+                    """
+    components.html(calendar_html, height=600, scrolling=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
@@ -350,17 +515,35 @@ elif page == "Delivery & Pickup":
     render_footer()
 
 elif page == "Events & Sales":
+    st.markdown('<div class="custom-title">Events & Sales:</div>', unsafe_allow_html=True)
     # Main event section
     col1, col2 = st.columns([2, 3])
     with col1:
-        st.image("assets/bearbagels2.png", use_container_width=False, width=720) #bearbagels2?
+        st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
+        st.image("assets/bearbagels2.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 0em; font-size: 40px;">Special Bread Shop Event?</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;">Bread Shop Now Open!</div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #222; font-weight: bold;">$$$</div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody">Something something special about our bread shop sales.</div>', unsafe_allow_html=True)
-        st.markdown('<div class="greybody">Additional maybe nutrition details</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">$$$</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Something something special about our bread shop sales.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody">Additional maybe nutrition details</div>', unsafe_allow_html=True)
     st.write("")
+    #more pics of current event?
+    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">More pics from our bread shop (<span style="color: #ffd626">•</span>v<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
+    more_imgs = [
+        "assets/plainbagels2.png",
+        "assets/bearbuns.png",
+        "assets/smthcookie.png"
+    ]
+    cols = st.columns(3)
+    for i, col in enumerate(cols):
+        with col:
+            if os.path.exists(more_imgs[i]):
+                st.image(more_imgs[i], use_container_width=True)
+            else:
+                st.image("https://placehold.co/200x120?text=Photo", use_container_width=True)
+
+
     # Past Events section
     st.markdown('<div class="section-title" style="margin-top: 2em;">Past Events</div>', unsafe_allow_html=True)
     #resizing images to have same height and width with PIL helper
@@ -397,11 +580,14 @@ elif page == "Events & Sales":
                 img = resize_image(past_event_imgs[i+j], target_size=(220,220))
                 if img is not None:
                     st.image(img, use_container_width=True)
-                
-                st.markdown(texts[i+j])
-                st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
-                st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
-                st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
+                #product_name = texts[i+j]
+                st.markdown(f'<div class="blackbody" style="margin-bottom: 1em; font-size: 24px;">{texts[i+j]}</div>', unsafe_allow_html=True)
+                #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; font-weight: bold;">Product</div>', unsafe_allow_html=True)
+                #st.markdown('<div class="greybody">Description of first product</div>', unsafe_allow_html=True)
+                #st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
+
+    st.write('<div class="section-title" style="margin-top: 2em;">Upcoming Events</div>', unsafe_allow_html=True)
+    st.markdown('<div class="ltbrwnbody" style="font-size: 24px;">No upcoming events :(</div>', unsafe_allow_html=True)
     render_footer()
 elif page == "About Us":
     st.markdown('<div style="font-family: Caveat Brush, cursive; font-size: 64px; color: #F64D4C; font-weight: bold; margin-top: 1em;">Meet the Team:</div>', unsafe_allow_html=True)
@@ -411,19 +597,21 @@ elif page == "About Us":
     with col1:
         st.image("assets/giapic.png", width=220)
     with col2:
-        st.markdown('<div class="ltbrwnbody">Gia something something lorem ipsum blah blah<br>Favorite sweet treat: Oreo McFlurry :P</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="font-size: 22px; color: #F64D4C; margin-top: 1.5em;">Gia something something lorem ipsum blah blah<br>Favorite sweet treat:'
+        '<span style="color: #ba9e8d;"> <span style="color: #7F6252;">Choco</span>late <span style="color: #7F6252;">Chip</span> Cook<span style="color: #7F6252;">ies</span></span></div>', unsafe_allow_html=True)
     # Second member: right-aligned
     col3, col4 = st.columns([2, 1])
     with col4:
         st.image("assets/gracepic.png", width=220)    
     with col3:
-        st.markdown('<div class="ltbrwnbody" style="text-align: right;">Grace something something lorem ipsum blah blah blah blah blah<br>Favorite sweet treat: Chocolate Chip Cookies</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 22px;margin-top: 1.5em; text-align: right; color: #F64D4C;">Grace something something lorem ipsum blah blah blah blah blah<br>' 
+        'Favorite sweet treat: <span style="color: #221414;">Oreo <span style="color: #77cdff">Mc</span>Flurry <span style="color: #77cdff">:P</span></span></div>', unsafe_allow_html=True)
     # Third member: left-aligned
     col5, col6 = st.columns([1, 2])
     with col5:
-        st.image("assets/mepic.png", width=220)
+        st.image("assets/mepic2.png", width=220)
     with col6:
-        st.markdown('<div class="ltbrwnbody">Sophie something something lorem ipsum blah blah<br>Favorite sweet treat: Crumbl Cannoli Cookie</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 22px; color: #F64D4C; margin-top: 1.5em;">Sophie something something lorem ipsum blah blah<br>Favorite sweet treat: <span style="color: #ffc8d3;">Crumbl <span style="color: #e5b982;">Can</span>noli <span style="color: #e5b982;">Cookie</span></span></span></div>', unsafe_allow_html=True)
     render_footer()
 elif page == "Contact Us":
     st.title("Contact Us")
