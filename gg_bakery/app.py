@@ -1,5 +1,7 @@
 import streamlit as st
-import streamlit.components.v1 as components #for dynamic calendar/
+import streamlit.components.v1 as components #for dynamic calendar?
+import calendar
+from datetime import datetime #for calendar
 import os
 from urllib.parse import unquote
 from PIL import Image, ImageOps, ImageDraw
@@ -157,7 +159,7 @@ st.markdown(
 all_pages = [
     "Landing Page",
     "Shop",
-    "G&G In Numbers",
+    #"G&G In Numbers",
     "Delivery & Pickup",
     "Events & Sales",
     "About Us",
@@ -212,12 +214,14 @@ if page == "Landing Page":
                     <!DOCTYPE html>
                     <html>
                     <head>
+                    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gaegu:wght@700&display=swap" rel="stylesheet">
                     <style>
                     * {box-sizing: border-box;}
                     ul {list-style-type: none;}
                     body {font-family: Verdana, sans-serif;}
 
                     .month {
+                    font-family: Gaegu, cursive;
                     padding: 70px 25px;
                     width: 100%;
                     background: #ba9e8d;
@@ -231,7 +235,7 @@ if page == "Landing Page":
 
                     .month ul li {
                     color: white;
-                    font-size: 20px;
+                    font-size: 28px;
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     }
@@ -242,17 +246,24 @@ if page == "Landing Page":
                     }
 
                     .month .next {
+                    font-family: Gaegu, cursive;
                     float: right;
                     padding-top: 10px;
                     }
 
                     .weekdays {
+                    font-family: Gaegu, cursive;
+                    font-weight: bold;
+                    font-size: 16px;
                     margin: 0;
                     padding: 10px 0;
                     background-color: #ddd;
                     }
 
                     .weekdays li {
+                    font-family: Gaegu, cursive;
+                    font-weight: bold;
+                    font-size: 16px;
                     display: inline-block;
                     width: 13.6%;
                     color: #666;
@@ -260,7 +271,8 @@ if page == "Landing Page":
                     }
 
                     .days {
-                    padding: 10px 0;
+                    font-family: Gaegu, cursive;
+                    padding: 5px 0;
                     background: #eee;
                     margin: 0;
                     }
@@ -269,11 +281,11 @@ if page == "Landing Page":
                     list-style-type: none;
                     display: inline-block;
                     width: 100px;
-                    height: 75px;
+                    height: 60px;
                     text-align: center;
                     border: 1px solid #ccc;
                     margin-bottom: 5px;
-                    font-size:12px;
+                    font-size:16px;
                     color: black;
                     }
 
@@ -368,7 +380,7 @@ if page == "Landing Page":
                     </html>
                     
                     """
-    components.html(calendar_html, height=600, scrolling=True)
+    components.html(calendar_html, height=800, scrolling=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
@@ -468,33 +480,33 @@ elif page == "Shop":
 
 
 # New blank pages
-elif page == "G&G In Numbers":
-    st.markdown('<div style="font-family: Caveat Brush, cursive; font-size: 64px; color: #F64D4C; font-weight: bold; margin-top: 1em;">G&G in Numbers:</div>', unsafe_allow_html=True)
-    #st.write("")
-    col1, col2 = st.columns([2, 2])
-    with col1:
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 2em;">Members Involved: ## </div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody">From volunteer bakers, story-reposters, delivery drivers, event-enterers, '
-        'and our beloved customers, heheheheheheh but real number of members involved idk</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Funds Raised: ## </div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Through all of our events, we\'ve collected ## for blank blank.</div>', unsafe_allow_html=True)
-    with col2:
-        #st.markdown('<div class="section-title" style="font-size: 64px;">20</div>', unsafe_allow_html=True)
-        # logo_path = "assets/gglogo.png"
-        # if os.path.exists(logo_path):
-        #     st.image(logo_path, use_container_width=False, width=160)
-        # else:
-        #     st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=160)
-        #st.write("")
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Events Hosted: ##</div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="margin-bottom: 0em;">From opening in 2024 till our summer break, we\'ve held 5 events: <br>look forward to even more for our next year!</div>', unsafe_allow_html=True)
-        st.markdown("<div style='margin-top: 5em;'> </div>", unsafe_allow_html=True)
-        logo_path = "assets/landing_image.png"
-        if os.path.exists(logo_path):
-            st.image(logo_path, use_container_width=False, width=160)
-        else:
-            st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=160)
-    render_footer()
+# elif page == "G&G In Numbers":
+#     st.markdown('<div style="font-family: Caveat Brush, cursive; font-size: 64px; color: #F64D4C; font-weight: bold; margin-top: 1em;">G&G in Numbers:</div>', unsafe_allow_html=True)
+#     #st.write("")
+#     col1, col2 = st.columns([2, 2])
+#     with col1:
+#         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 2em;">Members Involved: ## </div>', unsafe_allow_html=True)
+#         st.markdown('<div class="blackbody">From volunteer bakers, story-reposters, delivery drivers, event-enterers, '
+#         'and our beloved customers, heheheheheheh but real number of members involved idk</div>', unsafe_allow_html=True)
+#         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Funds Raised: ## </div>', unsafe_allow_html=True)
+#         st.markdown('<div class="blackbody" style="margin-bottom: 2em;">Through all of our events, we\'ve collected ## for blank blank.</div>', unsafe_allow_html=True)
+#     with col2:
+#         #st.markdown('<div class="section-title" style="font-size: 64px;">20</div>', unsafe_allow_html=True)
+#         # logo_path = "assets/gglogo.png"
+#         # if os.path.exists(logo_path):
+#         #     st.image(logo_path, use_container_width=False, width=160)
+#         # else:
+#         #     st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=160)
+#         #st.write("")
+#         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 28px; color: #F64D4C; font-weight: bold; margin-top: 8em;">Events Hosted: ##</div>', unsafe_allow_html=True)
+#         st.markdown('<div class="blackbody" style="margin-bottom: 0em;">From opening in 2024 till our summer break, we\'ve held 5 events: <br>look forward to even more for our next year!</div>', unsafe_allow_html=True)
+#         st.markdown("<div style='margin-top: 5em;'> </div>", unsafe_allow_html=True)
+#         logo_path = "assets/landing_image.png"
+#         if os.path.exists(logo_path):
+#             st.image(logo_path, use_container_width=False, width=160)
+#         else:
+#             st.image("https://placehold.co/160x160?text=Logo", use_container_width=False, width=160)
+#     render_footer()
 elif page == "Delivery & Pickup":
     # Pickup Locations section
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 72px; color: #a82020; font-weight: bold; margin-top: 1em;">Delivery Locations:</div>', unsafe_allow_html=True)
