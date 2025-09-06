@@ -248,7 +248,7 @@ if page == "Landing Page":
                     .month .next {
                     font-family: Gaegu, cursive;
                     float: right;
-                    padding-top: 10px;
+                    padding-top: 5px;
                     }
 
                     .weekdays {
@@ -265,7 +265,7 @@ if page == "Landing Page":
                     font-weight: bold;
                     font-size: 16px;
                     display: inline-block;
-                    width: 13.6%;
+                    width: 26.6%;
                     color: #666;
                     text-align: center;
                     }
@@ -281,7 +281,7 @@ if page == "Landing Page":
                     list-style-type: none;
                     display: inline-block;
                     width: 100px;
-                    height: 60px;
+                    height: 30px;
                     text-align: center;
                     border: 1px solid #ccc;
                     margin-bottom: 5px;
@@ -300,8 +300,8 @@ if page == "Landing Page":
                     .weekdays li, .days li {width: 13.1%;}
                     }
 
-                    @media screen and (max-width: 420px) {
-                    .weekdays li, .days li {width: 12.5%;}
+                    @media screen and (max-width: 1000px) {
+                    .weekdays li, .days li {width: 30.5%;}
                     .days li .active {padding: 2px;}
                     }
 
@@ -380,7 +380,11 @@ if page == "Landing Page":
                     </html>
                     
                     """
-    components.html(calendar_html, height=800, scrolling=True)
+    col1, col2 = st.columns([1,2])
+    with col1:
+        components.html(calendar_html, height=800, scrolling=True)
+    with col2:
+        st.markdown('<div class="ltbrwnbody" style=" font-size: 28px; margin-bottom: 1em;">Available Today:</div>', unsafe_allow_html=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
