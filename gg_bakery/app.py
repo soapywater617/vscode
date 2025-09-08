@@ -384,7 +384,8 @@ if page == "Landing Page":
     with col1:
         components.html(calendar_html, height=800, scrolling=True)
     with col2:
-        st.markdown('<div class="ltbrwnbody" style=" font-size: 28px; margin-bottom: 1em;">Available Today:</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style=" font-size: 28px; margin-bottom: .5em;">Available Today:</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody">- Bread shop:<br>   Bagels,<br>     Bread loaves',unsafe_allow_html=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
@@ -402,8 +403,8 @@ if page == "Landing Page":
     st.markdown('<div class="section-title">Our Reviews</div>', unsafe_allow_html=True)
     col6, col7, col8 = st.columns(3)
     with col6:
-        st.markdown('<div class="ltbrwn-title">“A terrific piece of praise”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Billy<br>Bob\'s brother</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwn-title">“not too sweet”</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Billy<br>Sophie\'s mother</div>', unsafe_allow_html=True)
     with col7:
         st.markdown('<div class="ltbrwn-title">“A fantastic bit of feedback”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Joel<br>Description</div>', unsafe_allow_html=True)
