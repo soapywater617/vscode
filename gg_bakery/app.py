@@ -316,7 +316,7 @@ if page == "Landing Page":
                     </style>
                         <style>
                         .main .block-container {
-                        max-width: 100% !important;
+                        max-width: 200% !important;
                         padding-left: 0rem;
                         padding-right: 0rem;
                         }   
@@ -329,8 +329,8 @@ if page == "Landing Page":
                         <li class="prev">&#10094;</li>
                         <li class="next">&#10095;</li>
                         <li>
-                        August<br>
-                        <span style="font-size:18px">2021</span>
+                        September<br>
+                        <span style="font-size:18px">2025</span>
                         </li>
                     </ul>
                     </div>
@@ -354,8 +354,8 @@ if page == "Landing Page":
                     <li>6</li>
                     <li>7</li>
                     <li>8</li>
-                    <li>9</li>
-                    <li><span class="active">10</span></li>
+                    <li><span class="active">9</span></li>
+                    <li>10</li>
                     <li>11</li>
                     <li>12</li>
                     <li>13</li>
@@ -388,8 +388,8 @@ if page == "Landing Page":
     with col1:
         components.html(calendar_html, height=800, scrolling=True)
     with col2:
-        st.markdown('<div class="ltbrwnbody" style=" font-size: 28px; margin-bottom: .5em;">Available Today:</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Updated Daily! Click the dark brown words for more info</div>',unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style=" font-size: 28px;">Available Today:</div>', unsafe_allow_html=True)
+        st.caption('<div class="ltbrwnbody" style="margin-bottom: 1em;">Updated Daily! Click the dark brown words for more info</div>',unsafe_allow_html=True)
         #ongoing event
         st.markdown('<div class="ltbrwnbody" style="font-size: 20px;"><a href="/?page=Events%20%26%20Sales" target="_self">Bread shop:</a></div>',unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody" style="font-size: 18px;">- Bagels<br>- Bread loaves</div>',unsafe_allow_html=True)
