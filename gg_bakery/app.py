@@ -226,7 +226,7 @@ if page == "Landing Page":
 
                     .month {
                     font-family: Gaegu, cursive;
-                    padding: 70px 25px;
+                    padding: 50px 10px;
                     width: 100%;
                     background: #ba9e8d;
                     text-align: center;
@@ -305,7 +305,7 @@ if page == "Landing Page":
                     }
 
                     @media screen and (max-width: 1000px) {
-                    .weekdays li, .days li {width: 30.5%;}
+                    .weekdays li, .days li {width: 11.5%;}
                     .days li .active {padding: 2px;}
                     }
 
@@ -316,7 +316,7 @@ if page == "Landing Page":
                     </style>
                         <style>
                         .main .block-container {
-                        max-width: 200% !important;
+                        max-width: 100% !important;
                         padding-left: 0rem;
                         padding-right: 0rem;
                         }   
@@ -329,7 +329,7 @@ if page == "Landing Page":
                         <li class="prev">&#10094;</li>
                         <li class="next">&#10095;</li>
                         <li>
-                        September<br>
+                        <span style="font-size:24px">September</span><br>
                         <span style="font-size:18px">2025</span>
                         </li>
                     </ul>
@@ -384,7 +384,7 @@ if page == "Landing Page":
                     </html>
                     
                     """
-    col1, col2 = st.columns([1,2])
+    col1, col2 = st.columns([1,1])
     with col1:
         components.html(calendar_html, height=800, scrolling=True)
     with col2:
@@ -414,7 +414,7 @@ if page == "Landing Page":
     col6, col7, col8 = st.columns(3)
     with col6:
         st.markdown('<div class="ltbrwn-title">“not too sweet”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Billy<br>Sophie\'s mother</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Fang<br>Sophie\'s mother</div>', unsafe_allow_html=True)
     with col7:
         st.markdown('<div class="ltbrwn-title">“A fantastic bit of feedback”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Joel<br>Description</div>', unsafe_allow_html=True)
