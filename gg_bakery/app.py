@@ -389,9 +389,13 @@ if page == "Landing Page":
         components.html(calendar_html, height=800, scrolling=True)
     with col2:
         st.markdown('<div class="ltbrwnbody" style=" font-size: 28px; margin-bottom: .5em;">Available Today:</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Updated Daily! Click the dark brown words for more info</div>',unsafe_allow_html=True)
+        #ongoing event
         st.markdown('<div class="ltbrwnbody" style="font-size: 20px;"><a href="/?page=Events%20%26%20Sales" target="_self">Bread shop:</a></div>',unsafe_allow_html=True)
-        st.markdown('<div class="ltbrwnbody" style="font-size 20px;">- Bagels<br>- Bread loaves</div>',unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 18px;">- Bagels<br>- Bread loaves</div>',unsafe_allow_html=True)
+        #custom
         st.markdown('<div class="ltbrwnbody" style="font-size: 20px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeN1ZFrdGuOProo8FecOigSmd70JB5NKeAt2uLTJOBRrqR-nQ/viewform">Custom Orders:</a></div>',unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 18px;">- Cakes<br>- Cupcakes<br>- Cookies<br>- Pastries</div>',unsafe_allow_html=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
