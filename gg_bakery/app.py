@@ -214,57 +214,76 @@ if page == "Landing Page":
 
     #Our Calendary
     st.markdown('<div class="section-title">Calendar</div>', unsafe_allow_html=True)
-    calendar_html = """
+
+    #creating calendar
+    today = datetime.today()
+    today_day = today.day
+    today_month = today.month
+    today_year = today.year
+
+    #get month name and days in month
+    month_name = calendar.month_name[today_month]
+    daysInMonth = calendar.monthrange(today_year, today_month)[1]
+
+    # for day in range(1, daysInMonth+1):
+    #     if day == today_day and month == today_month and year == today_year:
+    #         day_html = f'<li><span class="active">{day}</span></li>'
+    #     else:
+    #         day_html = f"<li>{day}</li>"
+    #     calendar_html += day_html
+
+
+    calendar_html = f"""
                     <!DOCTYPE html>
                     <html>
                     <head>
                     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gaegu:wght@700&display=swap" rel="stylesheet">
                     <style>
-                    * {box-sizing: border-box;}
-                    ul {list-style-type: none;}
-                    body {font-family: Verdana, sans-serif;}
+                    * {{box-sizing: border-box;}}
+                    ul {{list-style-type: none;}}
+                    body {{font-family: Verdana, sans-serif;}}
 
-                    .month {
+                    .month {{
                     font-family: Gaegu, cursive;
                     padding: 50px 10px;
                     width: 100%;
                     background: #ba9e8d;
                     text-align: center;
-                    }
+                    }}
 
-                    .month ul {
+                    .month ul {{
                     margin: 0;
                     padding: 0;
-                    }
+                    }}
 
-                    .month ul li {
+                    .month ul li {{
                     color: white;
                     font-size: 28px;
                     text-transform: uppercase;
                     letter-spacing: 3px;
-                    }
+                    }}
 
-                    .month .prev {
+                    .month .prev{{
                     float: left;
                     padding-top: 10px;
-                    }
+                    }}
 
-                    .month .next {
+                    .month .next {{
                     font-family: Gaegu, cursive;
                     float: right;
                     padding-top: 5px;
-                    }
+                    }}
 
-                    .weekdays {
+                    .weekdays {{
                     font-family: Gaegu, cursive;
                     font-weight: bold;
                     font-size: 16px;
                     margin: 0;
                     padding: 10px 0;
                     background-color: #ddd;
-                    }
+                    }}
 
-                    .weekdays li {
+                    .weekdays li {{
                     font-family: Gaegu, cursive;
                     font-weight: bold;
                     font-size: 16px;
@@ -272,16 +291,16 @@ if page == "Landing Page":
                     width: 26.6%;
                     color: #666;
                     text-align: center;
-                    }
+                    }}
 
-                    .days {
+                    .days {{
                     font-family: Gaegu, cursive;
-                    padding: 5px 0;
+                    padding: 10px 0;
                     background: #eee;
                     margin: 0;
-                    }
+                    }}
 
-                    .days li {
+                    .days li {{
                     list-style-type: none;
                     display: inline-block;
                     width: 100px;
@@ -291,47 +310,43 @@ if page == "Landing Page":
                     margin-bottom: 5px;
                     font-size:16px;
                     color: black;
-                    }
+                    }}
 
-                    .days li .active {
+                    .days li .active {{
                     padding: 5px;
                     background: #ba9e8d;
                     color: white !important
-                    }
+                    }}
 
                     /* Add media queries for smaller screens */
-                    @media screen and (max-width:720px) {
-                    .weekdays li, .days li {width: 13.1%;}
-                    }
+                    @media screen and (max-width:720px) {{
+                    .weekdays li, .days li {{width: 13.1%;}}
+                    }}
 
-                    @media screen and (max-width: 1000px) {
-                    .weekdays li, .days li {width: 11.5%;}
-                    .days li .active {padding: 2px;}
-                    }
+                    @media screen and (max-width: 1000px) {{
+                    .weekdays li, .days li {{width: 11.5%;}}
+                    .days li .active {{padding: 2px;}}
+                    }}
 
-                    @media screen and (max-width: 290px) {
-                    .weekdays li, .days li {width: 12.2%;}
-                    }
+                    @media screen and (max-width: 290px) {{
+                    .weekdays li, .days li {{width: 12.2%;}}
+                    }}
                     
                     </style>
                         <style>
-                        .main .block-container {
+                        .main .block-container {{
                         max-width: 100% !important;
                         padding-left: 0rem;
                         padding-right: 0rem;
-                        }   
+                        }}   
                     </style>
                     </head>
                     <body>
                     <div style="width:100%; display:block;">
-                    <div class="month">      
+                    <div class="month">           
                     <ul>
-                        <li class="prev">&#10094;</li>
-                        <li class="next">&#10095;</li>
-                        <li>
-                        <span style="font-size:24px">September</span><br>
-                        <span style="font-size:18px">2025</span>
-                        </li>
+                        <li>{month_name}</li>
+                        <li style="font-size:18px">{today_year}</li>
                     </ul>
                     </div>
 
@@ -345,45 +360,18 @@ if page == "Landing Page":
                     <li>Su</li>
                     </ul>
 
-                    <ul class="days">  
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li><span class="active">10</span></li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>31</li>
-                    </ul>
-
-                    </div>
-                    </body>
-                    </html>
-                    
+                    <ul class="days">
                     """
+
+    # Fill in days of the month
+    for day in range(1, daysInMonth + 1):
+        if day == today_day:
+            calendar_html += f"<li><span class='active'>{day}</span></li>"
+        else:
+            calendar_html += f"<li>{day}</li>"
+
+    calendar_html += "</ul>"
+
     col1, col2 = st.columns([1,1])
     with col1:
         components.html(calendar_html, height=800, scrolling=True)
