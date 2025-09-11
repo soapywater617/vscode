@@ -133,6 +133,12 @@ st.markdown(
         color: #ba9e8d;
         font-weight: regular;
     }
+    .darkbrwnbody {
+        font-family: 'Gaegu', cursive;
+        font-size: 16px;
+        color: #7F6252;
+        font-weight: regular;
+    }
     .blackbody {
         font-family: 'Gaegu', cursive;
         font-size: 16px;
@@ -304,7 +310,7 @@ if page == "Landing Page":
                     list-style-type: none;
                     display: inline-block;
                     width: 5px;
-                    height: 60px;
+                    height: 40px;
                     text-align: center;
                     border: 1px solid #ccc;
                     margin-bottom: 5px;
@@ -329,7 +335,7 @@ if page == "Landing Page":
                     }}
 
                     @media screen and (max-width: 290px) {{
-                    .weekdays li, .days li {{width: 12.2%;}}
+                    .weekdays li, .days li {{width: 8.2%;}}
                     }}
                     
                     </style>
@@ -398,13 +404,13 @@ if page == "Landing Page":
             st.image("https://placehold.co/160x160?text=gglogo", use_container_width=True) #gglogo
         
     # Our Reviews
-    st.markdown('<div class="section-title">Our Reviews</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title" style="margin-top:200px;">Our Reviews</div>', unsafe_allow_html=True)
     col6, col7, col8 = st.columns(3)
     with col6:
-        st.markdown('<div class="ltbrwn-title">“not too sweet”</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwn-title">“Not too sweet”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Fang<br>Sophie\'s mother</div>', unsafe_allow_html=True)
     with col7:
-        st.markdown('<div class="ltbrwn-title">“A fantastic bit of feedback”</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwn-title">“The best tiramisu ever”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Joel<br>Description</div>', unsafe_allow_html=True)
     with col8:
         st.markdown('<div class="ltbrwn-title">“A genuinely glowing review”</div>', unsafe_allow_html=True)
