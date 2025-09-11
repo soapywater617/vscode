@@ -288,14 +288,14 @@ if page == "Landing Page":
                     font-weight: bold;
                     font-size: 16px;
                     display: inline-block;
-                    width: 26.6%;
+                    width: 11.6%;
                     color: #666;
                     text-align: center;
                     }}
 
                     .days {{
                     font-family: Gaegu, cursive;
-                    padding: 10px 0;
+                    padding: 10px ;
                     background: #eee;
                     margin: 0;
                     }}
@@ -303,8 +303,8 @@ if page == "Landing Page":
                     .days li {{
                     list-style-type: none;
                     display: inline-block;
-                    width: 100px;
-                    height: 30px;
+                    width: 5px;
+                    height: 60px;
                     text-align: center;
                     border: 1px solid #ccc;
                     margin-bottom: 5px;
@@ -320,11 +320,11 @@ if page == "Landing Page":
 
                     /* Add media queries for smaller screens */
                     @media screen and (max-width:720px) {{
-                    .weekdays li, .days li {{width: 13.1%;}}
+                    .weekdays li, .days li {{width: 11.1%;}}
                     }}
 
                     @media screen and (max-width: 1000px) {{
-                    .weekdays li, .days li {{width: 11.5%;}}
+                    .days li {{width: 13.5%;}}
                     .days li .active {{padding: 2px;}}
                     }}
 
