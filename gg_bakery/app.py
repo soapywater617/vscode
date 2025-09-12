@@ -410,7 +410,7 @@ if page == "Landing Page":
     st.markdown('<div class="section-title" style="margin-top:200px;">Our Reviews</div>', unsafe_allow_html=True)
     col6, col7, col8 = st.columns(3)
     with col6:
-        st.markdown('<div class="ltbrwn-title">“Not too sweet”</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwn-title">“Not too sweet, very good”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Fang<br>Sophie\'s mother</div>', unsafe_allow_html=True)
     with col7:
         st.markdown('<div class="ltbrwn-title">“The best tiramisu ever”</div>', unsafe_allow_html=True)
@@ -621,21 +621,25 @@ elif page == "About Us":
     with col1:
         st.image("assets/giapic.png", width=220)
     with col2:
-        st.markdown('<div class="blackbody" style="font-size: 22px; color: #F64D4C; margin-top: 1.5em;">Gia something something lorem ipsum blah blah<br>Favorite sweet treat:'
-        '<span style="color: #ba9e8d;"> <span style="color: #7F6252;">Choco</span>late <span style="color: #7F6252;">Chip</span> Cook<span style="color: #7F6252;">ies</span></span></div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 22px; margin-top: 1em;">Gia is one of our two co-founders.' \
+        'With a super tuff background in baking, she\'s brought her hobby of baking for friends to a community and regional-wide scale!<br>Favorite sweet treat:'
+        '<span style="color: #ba9e8d;"> <span style="color: #7F6252;">Choco</span>late <span style="color: #7F6252;">Chip</span> Cook<span style="color: #7F6252;">ies XD</span></span></div>', unsafe_allow_html=True)
     # Second member: right-aligned
     col3, col4 = st.columns([2, 1])
     with col4:
         st.image("assets/gracepic.png", width=220)    
     with col3:
-        st.markdown('<div class="ltbrwnbody" style="font-size: 22px;margin-top: 1.5em; text-align: right; color: #F64D4C;">Grace something something lorem ipsum blah blah blah blah blah<br>' 
+        st.markdown('<div class="ltbrwnbody" style="font-size: 22px;margin-top: 2em; text-align: right;;">Grace, our other co-founder, bakes the best bread and bagels,'
+        ' so please try them out yes thank you :)<br>' 
         'Favorite sweet treat: <span style="color: #221414;">Oreo <span style="color: #77cdff">Mc</span>Flurry <span style="color: #77cdff">:P</span></span></div>', unsafe_allow_html=True)
     # Third member: left-aligned
     col5, col6 = st.columns([1, 2])
     with col5:
         st.image("assets/mepic2.png", width=220)
     with col6:
-        st.markdown('<div class="ltbrwnbody" style="font-size: 22px; color: #F64D4C; margin-top: 1.5em;">Sophie something something lorem ipsum blah blah<br>Favorite sweet treat: <span style="color: #ffc8d3;">Crumbl <span style="color: #e5b982;">Can</span>noli <span style="color: #e5b982;">Cookie</span></span></span></div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 22px; ; margin-top: 1em;">Sophie, a definitely super awesome coder, '
+        'and very helpful person of course, is the tech and finance manager, making ordering and getting our desserts even easier~<br>Favorite sweet treat:'
+        ' <span style="color: #ffc8d3;">Crumbl <span style="color: #e5b982;">Can</span>noli <span style="color: #e5b982;">Cookie...</span></span></span></div>', unsafe_allow_html=True)
     render_footer()
 elif page == "Contact Us":
     st.title("Contact Us")
