@@ -155,7 +155,7 @@ st.markdown(
 st.markdown(
     '''<div class="nav">
     <a href="/?page=Landing%20Page" target="_self">Home</a>
-    <a href="/?page=G%26G%20In%20Numbers" target="_self">G&G In Numbers</a>
+    <!--<a href="/?page=G%26G%20In%20Numbers" target="_self">G&G In Numbers</a>-->
     <a href="/?page=Delivery%20%26%20Pickup" target="_self">Delivery & Pickup</a>
     <a href="/?page=Events%20%26%20Sales" target="_self">Events & Sales</a>
     <a href="/?page=About%20Us" target="_self">About Us</a>
