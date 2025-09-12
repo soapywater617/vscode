@@ -389,7 +389,10 @@ if page == "Landing Page":
         st.markdown('<div class="ltbrwnbody" style="font-size: 18px;">- Bagels<br>- Bread loaves</div>',unsafe_allow_html=True)
         #custom
         st.markdown('<div class="ltbrwnbody" style="font-size: 20px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeN1ZFrdGuOProo8FecOigSmd70JB5NKeAt2uLTJOBRrqR-nQ/viewform">Custom Orders:</a></div>',unsafe_allow_html=True)
-        st.markdown('<div class="ltbrwnbody" style="font-size: 18px;">- Cakes<br>- Cupcakes<br>- Cookies<br>- Pastries</div>',unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 18px; margin-bottom: 0.5em;">- Cakes</div>',unsafe_allow_html=True)
+        st.image("assets/customcake_ia.png", width=200) #custom cake pic
+        st.caption('<div class="greybody" style="font-size: 14px; margin-top: -1em; margin-bottom: -2em;">One of our custom ordered cakes!</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwnbody" style="font-size: 20px; margin-top:-1em;"><br>- Cupcakes<br>- Cookies<br>- Pastries<br></div>',unsafe_allow_html=True)
 
     # Our Mission
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
@@ -550,11 +553,11 @@ elif page == "Events & Sales":
         st.markdown('<div class="ltbrwnbody">Additional maybe nutrition details</div>', unsafe_allow_html=True)
     st.write("")
     #more pics of current event?
-    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">More pics from our bread shop (<span style="color: #ffd626">•</span>v<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
+    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">More pics from our bread shop (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
     more_imgs = [
         "assets/plainbagels2.png",
         "assets/bearbuns.png",
-        "assets/smthcookie.png"
+        "assets/shokupan.png"
     ]
     cols = st.columns(3)
     for i, col in enumerate(cols):
