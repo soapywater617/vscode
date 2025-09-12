@@ -521,7 +521,7 @@ elif page == "Delivery & Pickup":
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 72px; color: #a82020; font-weight: bold; margin-top: 1em;">Delivery Locations:</div>', unsafe_allow_html=True)
     st.markdown('<div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 1em;">The star markers mark locations where we deliver to, including: UW, Interlake HS, Bellevue HS, Tyee MS, and Newport HS.</div>', unsafe_allow_html=True)
     st.image("assets/map.png", use_container_width=True) #map T-T
-    st.markdown('<a href=""><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get Google Maps links to delivery meet-up locations</div></a>'
+    st.markdown('<a href="https://maps.app.goo.gl/uABmYt72znUA1Z8a7"><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get Google Maps links to delivery meet-up locations</div></a>'
     '<br>For delivery, you will meet someone blah blah at the designated location blah blah as discussed with said blah blah'
     'at blah blah time.</div>', unsafe_allow_html=True)
     # Delivery Options section
