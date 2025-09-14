@@ -52,6 +52,11 @@ st.markdown(
         font-weight: bold;
         padding: 0 8px;
     }
+    .section-title a {
+        color: #F64D4C;
+        text-decoration: none;
+        font-weight: bold;
+    }
     .shop-btn {
         background: #7F6252;
         color: #fff;
@@ -546,9 +551,9 @@ elif page == "Events & Sales":
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
         st.image("assets/bearbagels2.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;">Bread Shop Now Open!</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/zsrcaV9UQntN98LV8">Bread Shop Now Open!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">$$$</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Bear Bagels:</div>', unsafe_allow_html=True)
         st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Something something special about our bread shop sales.</div>', unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody">Additional maybe nutrition details</div>', unsafe_allow_html=True)
     st.write("")
@@ -611,7 +616,7 @@ elif page == "Events & Sales":
                 #st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
 
     st.write('<div class="section-title" style="margin-top: 2em;">Upcoming Events</div>', unsafe_allow_html=True)
-    st.markdown('<div class="ltbrwnbody" style="font-size: 24px;">No upcoming events :(</div>', unsafe_allow_html=True)
+    st.markdown('<div class="ltbrwnbody" style="font-size: 24px;">~ Cake pops</div>', unsafe_allow_html=True)
     render_footer()
 elif page == "About Us":
     st.markdown('<div style="font-family: Caveat Brush, cursive; font-size: 64px; color: #F64D4C; font-weight: bold; margin-top: 1em;">Meet the Team:</div>', unsafe_allow_html=True)
