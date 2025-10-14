@@ -236,7 +236,7 @@ if page == "Landing Page":
         st.markdown('<div class="dessert-title">Tiramisu</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Egg-less Tiramisu with smooth, cream cheese whipped cream.</div>', unsafe_allow_html=True)
     with col2:
-        st.image(resize_image("gg_bakery/assets/cakepopbag.png",target_size=(220,220)), use_container_width=True) #matchapuff
+        st.image(resize_image("gg_bakery/assets/cakepopbag.png",target_size=(220,220)), use_container_width=True) #cake pops,,
         st.markdown('<div class="dessert-title">Cake Pops</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Soft, flavorful cake pops coated in premium matcha & chocolate</div>', unsafe_allow_html=True)
     with col3:
