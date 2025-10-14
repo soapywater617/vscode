@@ -186,10 +186,10 @@ query_params = st.query_params
 page = query_params.get("page", "Landing Page")
 
 # Sidebar navigation (optional, keeps in sync with top nav)
-st.sidebar.title("Navigation")
-selected = st.sidebar.radio("Go to", all_pages, index=all_pages.index(page))
-st.query_params["page"] = selected
-page = selected
+#st.sidebar.title("Navigation")
+#selected = st.sidebar.radio("Go to", all_pages, index=all_pages.index(page))
+#st.query_params["page"] = selected
+#page = selected
 
 if page == "Landing Page":
     st.markdown('<div class="custom-title">G&G Bakery</div>', unsafe_allow_html=True)
