@@ -5,6 +5,18 @@ from datetime import datetime #for calendar
 import os
 from urllib.parse import unquote
 from PIL import Image, ImageOps, ImageDraw
+# Put this after imports in app.py
+hide_streamlit_style = """
+    <style>
+    /* Hide the left pages sidebar panel (Streamlit auto-pages) */
+    [data-testid="stSidebar"] { display: none !important; }
+    /* Hide the pages menu button (newer Streamlit uses a pages menu button) */
+    button[aria-label="Open navigation menu"], button[title="Open navigation menu"] { display: none !important; }
+    /* Hide the top-left hamburger (app menu) if needed */
+    .css-1r6slb0.egzxvld0 { display: none !important; } /* fallback, may vary by version */
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def render_footer():
     st.markdown(
