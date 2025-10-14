@@ -216,8 +216,8 @@ if page == "Landing Page":
         st.caption('<div class="greybody">Egg-less Tiramisu with smooth, cream cheese whipped cream.</div>', unsafe_allow_html=True)
     with col2:
         st.image("gg_bakery/assets/matcha_puff.png", use_container_width=True) #matchapuff
-        st.markdown('<div class="dessert-title">Cream Puffs</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">description description description many flavors</div>', unsafe_allow_html=True)
+        st.markdown('<div class="dessert-title">Cake Pops</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Soft, flavorful cake pops coated in premium matcha & chocolate</div>', unsafe_allow_html=True)
     with col3:
         st.image("gg_bakery/assets/pink_cupcake.png", use_container_width=True) #strawcupcakes
         st.markdown('<div class="dessert-title">Cupcakes</div>', unsafe_allow_html=True)
@@ -616,7 +616,7 @@ elif page == "Events & Sales":
                 #st.markdown('<div class="greybody" style="margin-bottom: 1.5em">$10.99</div>', unsafe_allow_html=True)
 
     st.write('<div class="section-title" style="margin-top: 2em;">Upcoming Events</div>', unsafe_allow_html=True)
-    st.markdown('<div class="ltbrwnbody" style="font-size: 24px;">~ Cake pops</div>', unsafe_allow_html=True)
+    st.markdown('<div class="ltbrwnbody" style="font-size: 24px;">Look forward to our Special Brookie sale! (unique flavors!!)</div>', unsafe_allow_html=True)
     render_footer()
 elif page == "About Us":
     st.markdown('<div style="font-family: Caveat Brush, cursive; font-size: 64px; color: #F64D4C; font-weight: bold; margin-top: 1em;">Meet the Team:</div>', unsafe_allow_html=True)
