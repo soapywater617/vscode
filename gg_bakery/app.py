@@ -424,7 +424,10 @@ if page == "Landing Page":
     st.markdown('<div class="section-title">Our Mission:</div>', unsafe_allow_html=True)
     col4, col5 = st.columns([2, 3])
     with col4:
-        st.write('<div class="blackbody">G&G Bakery’s mission is blah blah bring a smile to every bake proper name place name story time stuff</div>', unsafe_allow_html=True)
+        st.write('<div class="blackbody">G&G Bakery strives not only to bring delicious treats ' \
+        'to the local community, but also seeks to give back to the larger ' \
+        'community by portioning 60 percent of our profits to fund movements that matter, ' \
+        'from our community to a global scale</div>', unsafe_allow_html=True)
     with col5:
         if (os.path.exists("gg_bakery/assets/gglogo.png")):
             st.image("gg_bakery/assets/gglogo.png", use_container_width=True)
