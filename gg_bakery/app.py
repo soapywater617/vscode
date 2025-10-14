@@ -202,7 +202,15 @@ page = query_params.get("page", "Landing Page")
 #selected = st.sidebar.radio("Go to", all_pages, index=all_pages.index(page))
 #st.query_params["page"] = selected
 #page = selected
-
+def resize_image(path, target_size=(220,220)):
+    from PIL import Image
+    try:
+        img = Image.open(path)
+        return img.resize(target_size)
+    except Exception as e:
+        st.warning(f"Could not open image: {path} ({e})")
+        return None
+    
 if page == "Landing Page":
     st.markdown('<div class="custom-title">G&G Bakery</div>', unsafe_allow_html=True)
     st.markdown('<div class="subheading">Welcome valued customer!! Explore our past events, learn more about our team, or find the answer to your cravings in our shop! <br>Have fun ^-^</div>', unsafe_allow_html=True)
@@ -219,6 +227,7 @@ if page == "Landing Page":
         st.image("https://github.com/soapywater617/vscode/blob/b081cdd8a3218cbae5ac2838ca07b1a220201e05/gg_bakery/assets/landing_image.png", use_container_width=False, width=220)
     st.write("")
 
+
     # Recent Desserts
     st.markdown('<div class="section-title">Recent Desserts</div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
@@ -227,7 +236,7 @@ if page == "Landing Page":
         st.markdown('<div class="dessert-title">Tiramisu</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Egg-less Tiramisu with smooth, cream cheese whipped cream.</div>', unsafe_allow_html=True)
     with col2:
-        st.image("gg_bakery/assets/cakepopbag.png", use_container_width=True) #matchapuff
+        st.image(resize_image("gg_bakery/assets/cakepopbag.png"), use_container_width=True) #matchapuff
         st.markdown('<div class="dessert-title">Cake Pops</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Soft, flavorful cake pops coated in premium matcha & chocolate</div>', unsafe_allow_html=True)
     with col3:
@@ -588,14 +597,14 @@ elif page == "Events & Sales":
     # Past Events section
     st.markdown('<div class="section-title" style="margin-top: 2em;">Past Events</div>', unsafe_allow_html=True)
     #resizing images to have same height and width with PIL helper
-    def resize_image(path, target_size=(220,220)):
-        from PIL import Image
-        try:
-            img = Image.open(path)
-            return img.resize(target_size)
-        except Exception as e:
-            st.warning(f"Could not open image: {path} ({e})")
-            return None
+    # def resize_image(path, target_size=(220,220)):
+    #     from PIL import Image
+    #     try:
+    #         img = Image.open(path)
+    #         return img.resize(target_size)
+    #     except Exception as e:
+    #         st.warning(f"Could not open image: {path} ({e})")
+    #         return None
 
     # 2 rows of 3 images each
     past_event_imgs = [
