@@ -500,14 +500,14 @@ elif page == "Shop":
     with col5:
         st.image("gg_bakery/assets/bearbuns.png", use_container_width=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Bear Buns!</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Sweet milk buns, shaped into cute bears :) (4in diameter)<br>Price of One: $6-7</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Sweet milk buns, shaped into cute bears :) (4in diameter)<br>Price of One: $2.50</div>', unsafe_allow_html=True)
     with col6:
-        st.image("https://placehold.co/200x120?text=Photo", use_container_width=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Shokupan?</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Japanese Milk Bread<br>$10.99</div>', unsafe_allow_html=True)
+        st.image("gg_bakery/assets/shokupan.png", use_container_width=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Shokupan</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Japanese Milk Bread<br>$6-7</div>', unsafe_allow_html=True)
         st.image("gg_bakery/assets/bearbagels2.png", use_container_width=True) #bearbagels!
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Bear Bagels ;)</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Bagels of your choice with bear faces c._.o<br>$10.99</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #7F6252; font-weight: bold;">Bear Bagels :)</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Bagels of your choice with bear faces c._.o<br>$10.99 for 6</div>', unsafe_allow_html=True)
     st.write("")
     # Section heading with 4 subheadings
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px; color: #7F6252; font-weight: bold; margin-top: 2em;">Look Forward To:</div>', unsafe_allow_html=True)
