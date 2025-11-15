@@ -517,7 +517,7 @@ elif page == "Shop":
         "Christmas Boxes",
         "Chocolate Covered Strawberries",
     ]
-    for i in range(7, 8, 9, 10):
+    for i in range(7, 10, 1):
         cols = st.columns(4)
         for j, col in enumerate(cols):
             with col:
