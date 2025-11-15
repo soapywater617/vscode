@@ -517,12 +517,12 @@ elif page == "Shop":
         "Christmas Boxes",
         "Chocolate Covered Strawberries",
     ]
-    for i in range(7, 10, 1):
-        cols = st.columns(4)
-        for j, col in enumerate(cols):
-            with col:
-                st.markdown(f'<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">{future_desserts[j]}</div>', unsafe_allow_html=True)
-                st.caption('<div class="greybody">estimated date before Feb 2026</div>', unsafe_allow_html=True)
+    #for i in range(7, 10, 1):
+    cols = st.columns(4)
+    for j, col in enumerate(cols):
+        with col:
+            st.markdown(f'<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">{future_desserts[j]}</div>', unsafe_allow_html=True)
+            st.caption('<div class="greybody">estimated date before Feb 2026</div>', unsafe_allow_html=True)
     # Footer
     render_footer()
 
