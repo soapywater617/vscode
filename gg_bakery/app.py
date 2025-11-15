@@ -442,8 +442,8 @@ if page == "Landing Page":
         st.markdown('<div class="ltbrwn-title">“Not too sweet, very good”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Fang<br>Sophie\'s mother</div>', unsafe_allow_html=True)
     with col7:
-        st.markdown('<div class="ltbrwn-title">“it\'s so good”</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody"><br>Description</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ltbrwn-title">“it\'s so good!!”</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody"><br>Allison</div>', unsafe_allow_html=True)
     with col8:
         st.markdown('<div class="ltbrwn-title">“I like the spotted vanilla parts”</div>', unsafe_allow_html=True)
         st.caption('<div class="greybody">Winnie the pooh<br>Bought extra cupcakes</div>', unsafe_allow_html=True)
