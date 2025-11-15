@@ -511,11 +511,18 @@ elif page == "Shop":
     st.write("")
     # Section heading with 4 subheadings
     st.markdown('<div style="font-family: Gaegu, cursive; font-size: 36px; color: #7F6252; font-weight: bold; margin-top: 2em;">Look Forward To:</div>', unsafe_allow_html=True)
-    col7, col8, col9, col10 = st.columns(4)
-    for col in [col7, col8, col9, col10]:
-        with col:
-            st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Future Product</div>', unsafe_allow_html=True)
-            st.caption('<div class="greybody">Something something description maybe + estimated date</div>', unsafe_allow_html=True)
+    future_desserts = [
+        "Dubai Chocolate Brownies",
+        "Specialty Lattes",
+        "Christmas Boxes",
+        "Chocolate Covered Strawberries",
+    ]
+    for i in range(7, 8, 9, 10):
+        cols = st.columns(4)
+        for j, col in enumerate(cols):
+            with col:
+                st.markdown(f'<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">{future_desserts[i]}</div>', unsafe_allow_html=True)
+                st.caption('<div class="greybody">estimated date before Feb 2026</div>', unsafe_allow_html=True)
     # Footer
     render_footer()
 
@@ -554,7 +561,7 @@ elif page == "Delivery & Pickup":
     st.markdown('<div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 1em;">The star markers mark locations where we deliver to, including: UW, Interlake HS, Bellevue HS, Tyee MS, and Newport HS.</div>', unsafe_allow_html=True)
     st.image("gg_bakery/assets/map.png", use_container_width=True) #map T-T
     st.markdown('<a href="https://maps.app.goo.gl/uABmYt72znUA1Z8a7"><div class="ltbrwnbody" style=" font-size: 18px; margin-bottom: 2em;"><div style="color: #a82020">Click here to get Google Maps links to delivery meet-up locations</div></a>'
-    '<br>For delivery, you will meet someone blah blah at the designated location blah blah as discussed with said blah blah'
+    '<br>For delivery, you will meet someone from our team at the designated location, at an agreed time as discussed with said member.'
     'at blah blah time.</div>', unsafe_allow_html=True)
     # Delivery Options section
     st.markdown('<div class="section-title" style="font-size: 40px; color: #a82020; margin-top: 2em;">Pickup (or other) Options:</div>', unsafe_allow_html=True)
@@ -564,7 +571,7 @@ elif page == "Delivery & Pickup":
     with col2:
         st.image("gg_bakery/assets/gglogo.png", use_container_width=True) #gglogo? or other pic
     st.markdown('<div class="ltbrwnbody" style="color: #a82020">General pickups will be throughout the school day @ Newport HS<br>' \
-    'Special deliveries can be made to your house. For more info,</div>', unsafe_allow_html=True)
+    'Special deliveries can be made to your house. For more info, dm us on instagram!</div>', unsafe_allow_html=True)
     render_footer()
 
 elif page == "Events & Sales":
