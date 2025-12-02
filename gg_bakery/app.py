@@ -488,7 +488,7 @@ elif page == "Shop":
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/6ZRuRCpMWp8G99AbA">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
-        st.image("gg_bakery/assets/plainbagels.png", use_container_width=True) #plainbagels
+        st.image("gg_bakery/assets/hcbdone.png", use_container_width=True) #plainbagels
     col3, col4 = st.columns([2, 3])
     with col3:
         st.image("gg_bakery/assets/straw_cake.png", use_container_width=True) 
