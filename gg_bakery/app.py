@@ -80,6 +80,10 @@ st.markdown(
         margin-left: 12px;
         cursor: pointer;
     }
+    .shop-btn a {
+        color: #fff;
+        text-decoration: none;
+    }
     .custom-title {
         font-family: 'Caveat Brush', cursive;
         font-size: 64px;
