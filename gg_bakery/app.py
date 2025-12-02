@@ -582,10 +582,10 @@ elif page == "Events & Sales":
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
         st.image("gg_bakery/assets/cookieboxinfo.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/zsrcaV9UQntN98LV8">Order Holiday Cookie Boxes Now!</a></div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/zsrcaV9UQntN98LV8">Order Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Bear Bagels:</div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Freshly baked bagels with ears and faces.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Holiday Cookie Boxes:</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Variety pack of the most festive cookies to brighten your holiday.</div>', unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody">For additional details, contact us!</div>', unsafe_allow_html=True)
     st.write("")
     #more pics of current event?
