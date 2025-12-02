@@ -580,7 +580,7 @@ elif page == "Events & Sales":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
-        st.image("gg_bakery/assets/cookieboxes.png", use_container_width=True) #bearbagels2?
+        st.image("gg_bakery/assets/cookieboxinfo.png", use_container_width=True) #bearbagels2?
     with col2:
         st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/zsrcaV9UQntN98LV8">Order Holiday Cookie Boxes Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
