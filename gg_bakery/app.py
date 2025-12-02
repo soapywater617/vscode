@@ -593,7 +593,7 @@ elif page == "Events & Sales":
     st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exact cookie designs - credit to sally\'s baking recipes for images)</div>', unsafe_allow_html=True)
     more_imgs = [
         "gg_bakery/assets/cinnamonrollcookies.png",
-        "gg_bakery/assets/bearbuns.png",
+        "gg_bakery/assets/hcb_ricekrispies.png",
         "gg_bakery/assets/hotcocoacookies.png"
     ]
     cols = st.columns(3)
@@ -624,7 +624,7 @@ elif page == "Events & Sales":
         "gg_bakery/assets/hcbopen.png",
         "gg_bakery/assets/combobags.png",
         "gg_bakery/assets/tirastack.png",
-        "gg_bakery/assets/hcb_ricekrispies.png"
+        "gg_bakery/assets/straw_cake.png"
     ]
     texts = [
     "Our 1st Custom Cookie Order 🍪",
