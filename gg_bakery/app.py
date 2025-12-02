@@ -590,10 +590,11 @@ elif page == "Events & Sales":
     st.write("")
     #more pics of current event?
     st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of cookies included: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exact cookie designs - credit to sally\'s baking recipes for images)</div>', unsafe_allow_html=True)
     more_imgs = [
-        "gg_bakery/assets/plainbagels2.png",
+        "gg_bakery/assets/cinnamonrollcookies.png",
         "gg_bakery/assets/bearbuns.png",
-        "gg_bakery/assets/shokupan.png"
+        "gg_bakery/assets/hotcocoacookies.png"
     ]
     cols = st.columns(3)
     for i, col in enumerate(cols):
@@ -621,14 +622,14 @@ elif page == "Events & Sales":
         "gg_bakery/assets/customcookieorder.jpg",
         "gg_bakery/assets/puffpuff.png",
         "gg_bakery/assets/hcbopen.png",
-        "gg_bakery/assets/matcha_puff.png",
+        "gg_bakery/assets/combobags.png",
         "gg_bakery/assets/tirastack.png",
         "gg_bakery/assets/hcb_ricekrispies.png"
     ]
     texts = [
     "Our 1st Custom Cookie Order 🍪",
     "Cream Puffs!",
-    "Holiday Cookie Boxes",
+    "Holiday Cookie Boxes (2024)",
     "Extra Combo Boxes",
     "Our favorite, Tiramisu!!",
     "Cupcakes...?"
