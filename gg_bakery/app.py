@@ -479,9 +479,9 @@ elif page == "Shop":
     # Currently selling and Custom Cakes section
     col1, col2 = st.columns([2, 3])
     with col1:
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Bread Bags?</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Bread bags with </div>', unsafe_allow_html=True)
-        st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;">Pricing</button>'
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Cookie Boxes!!</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Cookie boxes with a variety of holiday flavored treats (limited time sale)</div>', unsafe_allow_html=True)
+        st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/6ZRuRCpMWp8G99AbA">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
         st.image("gg_bakery/assets/plainbagels.png", use_container_width=True) #plainbagels
@@ -582,7 +582,7 @@ elif page == "Events & Sales":
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
         st.image("gg_bakery/assets/cookieboxinfo.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/zsrcaV9UQntN98LV8">Order Now!</a></div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/sCHjjRMb8rkR1ihz6">Order Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Holiday Cookie Boxes:</div>', unsafe_allow_html=True)
         st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Variety pack of the most festive cookies to brighten your holiday.</div>', unsafe_allow_html=True)
