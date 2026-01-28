@@ -488,7 +488,7 @@ elif page == "Shop":
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
-        st.image("gg_bakery/assets/hcbdone.jpg", use_container_width=True) #plainbagels
+        st.image("gg_bakery/assets/dubaichoc.png", use_container_width=True) #plainbagels
     col3, col4 = st.columns([2, 3])
     with col3:
         st.image("gg_bakery/assets/straw_cake.png", use_container_width=True) 
@@ -584,21 +584,21 @@ elif page == "Events & Sales":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
-        st.image("gg_bakery/assets/cookieboxinfo.png", use_container_width=True) #bearbagels2?
+        st.image("gg_bakery/assets/dubaichoc.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/sCHjjRMb8rkR1ihz6">Order Now!</a></div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Holiday Cookie Boxes:</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookies:</div>', unsafe_allow_html=True)
         st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Variety pack of the most festive cookies to brighten your holiday.</div>', unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody">For additional details, contact us!</div>', unsafe_allow_html=True)
     st.write("")
     #more pics of current event?
-    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of cookies included: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
-    st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exact cookie designs - credit to sally\'s baking recipes for images)</div>', unsafe_allow_html=True)
+    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of cookies: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exact cookie, but will be similar size)</div>', unsafe_allow_html=True)
     more_imgs = [
-        "gg_bakery/assets/cinnamonrollcookies.png",
-        "gg_bakery/assets/hcb_ricekrispies.png",
-        "gg_bakery/assets/hotcocoacookies.png"
+        "gg_bakery/assets/dubai1.png",
+        "gg_bakery/assets/dubai2.png",
+        "gg_bakery/assets/dubaichoc.png"
     ]
     cols = st.columns(3)
     for i, col in enumerate(cols):
