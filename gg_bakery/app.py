@@ -483,9 +483,9 @@ elif page == "Shop":
     # Currently selling and Custom Cakes section
     col1, col2 = st.columns([2, 3])
     with col1:
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Cookie Boxes!!</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Cookie boxes with a variety of holiday flavored treats (limited time sale)</div>', unsafe_allow_html=True)
-        st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/6ZRuRCpMWp8G99AbA">Order</a></button>'
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookie</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Chewy marshmallow Dubai Chocolate cookie (limited time sale)</div>', unsafe_allow_html=True)
+        st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
         st.image("gg_bakery/assets/hcbdone.jpg", use_container_width=True) #plainbagels
