@@ -484,7 +484,7 @@ elif page == "Shop":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookie</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Chewy marshmallow Dubai Chocolate cookie (limited time sale)</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Soft, chew, marshmallow Dubai Chocolate cookie (limited time sale)</div>', unsafe_allow_html=True)
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
@@ -589,7 +589,7 @@ elif page == "Events & Sales":
         st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookies:</div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Variety pack of the most festive cookies to brighten your holiday.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Ingredients: Pistachio Sauce, Cocoa Powder, Marshmallow (Geletin), Kadafi.</div>', unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody">For additional details, contact us!</div>', unsafe_allow_html=True)
     st.write("")
     #more pics of current event?
