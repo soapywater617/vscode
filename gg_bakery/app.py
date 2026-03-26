@@ -596,15 +596,21 @@ elif page == "Events & Sales":
     st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of bread: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
     st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exactly, but will be similar size)</div>', unsafe_allow_html=True)
     more_imgs = [
-        "gg_bakery/assets/dubai1.png",
-        "gg_bakery/assets/dubai2.png",
-        "gg_bakery/assets/dubaichoc.png"
+        "gg_bakery/assets/garlicsaltbread.png",
+        "gg_bakery/assets/matchasaltbread.png",
+        "gg_bakery/assets/erinsSB.png"
+    ]
+    credit = [
+        "@samaheats",
+        "@eatdrinkplus",
+        "@erinscozykitchen"
     ]
     cols = st.columns(3)
     for i, col in enumerate(cols):
         with col:
             if os.path.exists(more_imgs[i]):
                 st.image(more_imgs[i], use_container_width=True)
+                st.markdown('<div class="greybody" style="font-size: 10px; margin-top: 0.5em;"> cr: instagram,' + credit[i] + '</div>', unsafe_allow_html=True)
             else:
                 st.image("https://placehold.co/200x120?text=Photo", use_container_width=True)
 
