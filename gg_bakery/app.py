@@ -473,7 +473,7 @@ elif page == "Shop":
         <div style="position: relative; z-index: 2; width: 100%; text-align: center;">
             <h1 style="font-family: 'Gaegu', cursive; font-size: 64px; color: #fff; margin-bottom: 0.2em;">Our Shop</h1>
             <div style="font-family: 'Gaegu', cursive; font-size: 24px; color: #fff; margin-bottom: 1em;">Custom Orders Open Now!</div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN1ZFrdGuOProo8FecOigSmd70JB5NKeAt2uLTJOBRrqR-nQ/viewform">
+            <a href="https://forms.gle/yH6JcQLsUK5Ly4Fs5">
             <button style="background: #7F625; color:  #7F6252; border: none; border-radius: 6px; padding: 10px 32px; font-family: 'Gaegu', cursive; font-size: 18px;">Order</button>
         </a>
         </div>
