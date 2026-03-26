@@ -584,17 +584,17 @@ elif page == "Events & Sales":
     col1, col2 = st.columns([2, 3])
     with col1:
         st.markdown('<div class="section-title" style="font-size: 20px;"><br> </div>', unsafe_allow_html=True)
-        st.image("gg_bakery/assets/dubaichoc.png", use_container_width=True) #bearbagels2?
+        st.image("gg_bakery/assets/saltbreadplain.png", use_container_width=True) #bearbagels2?
     with col2:
-        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order Now!</a></div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"style="margin-bottom: 0em; margin-top: 1em; font-size: 40px;"><a href="https://forms.gle/yH6JcQLsUK5Ly4Fs5">Order Now!</a></div>', unsafe_allow_html=True)
         #st.markdown('<div style="font-family: Gaegu, cursive; font-size: 16px; color: #222; margin-bottom: 0.5em;">Most recent</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookies:</div>', unsafe_allow_html=True)
-        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Ingredients: Pistachio Sauce, Cocoa Powder, Marshmallow (Geletin), Kadafi.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 18px; color: #7F6252; font-weight: bold;">Salt Bread:</div>', unsafe_allow_html=True)
+        st.markdown('<div class="blackbody" style="font-size: 20px; color: #7F6252;">Ingredients: Flour, Sugar, Butter, Cream (may include Match Powder, Garlic)</div>', unsafe_allow_html=True)
         st.markdown('<div class="ltbrwnbody">For additional details, contact us!</div>', unsafe_allow_html=True)
     st.write("")
     #more pics of current event?
-    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of cookies: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
-    st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exact cookie, but will be similar size)</div>', unsafe_allow_html=True)
+    st.write('<div class="section-title" style="font-size: 24px; margin-bottom: 1em;">Pics of bread: (<span style="color: #ffd626">•</span>U<span style="color: #ffd626">•</span>)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="greybody" style="font-size: 14px; margin-bottom: 1em;">(Photos may not reflect exactly, but will be similar size)</div>', unsafe_allow_html=True)
     more_imgs = [
         "gg_bakery/assets/dubai1.png",
         "gg_bakery/assets/dubai2.png",
