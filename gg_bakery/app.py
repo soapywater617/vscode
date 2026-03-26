@@ -483,12 +483,12 @@ elif page == "Shop":
     # Currently selling and Custom Cakes section
     col1, col2 = st.columns([2, 3])
     with col1:
-        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Dubai Chocolate Cookie</div>', unsafe_allow_html=True)
-        st.caption('<div class="greybody">Soft, chew, marshmallow Dubai Chocolate cookie (limited time sale)</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-family: Gaegu, cursive; font-size: 32px; color: #7F6252; font-weight: bold;">Korean Salt Bread</div>', unsafe_allow_html=True)
+        st.caption('<div class="greybody">Crispy, soft, and pillowy salt bread! (limited time sale)</div>', unsafe_allow_html=True)
         st.markdown('<button style="background: #7F6252; color: #fff; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px; margin-right: 8px;"><a href="https://forms.gle/Kxe5DKqygRwto8GS8">Order</a></button>'
                     '<button style="background: #eee; color: #7F6252; border: none; border-radius: 6px; padding: 6px 18px; font-family: Gaegu, cursive; font-size: 16px;">More Info</button>', unsafe_allow_html=True)
     with col2:
-        st.image("gg_bakery/assets/dubaichoc.png", use_container_width=True) #plainbagels
+        st.image("gg_bakery/assets/saltbreadplain.png", use_container_width=True) #plainbagels
     col3, col4 = st.columns([2, 3])
     with col3:
         st.image("gg_bakery/assets/straw_cake.png", use_container_width=True) 
